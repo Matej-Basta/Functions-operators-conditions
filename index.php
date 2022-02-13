@@ -92,4 +92,32 @@ function getLanguageUse($language) {
 
 // echo getLanguageUse("Php"); 
 
+$time_served = 0;
+
+// while($time_served < 10) {
+//     echo "The prisoner has served " . $time_served++ . " years. <br>";
+// }
+
+// do {
+//     echo "The prisoner has served " . $time_served++ . " years. <br>";
+// } while($time_served < -4);
+
+// for ($i = 1; $i < 6; $i++) {
+//     echo "The prisoner has " . 5 - $i . " more years to serve. <br>";
+// }
+
+for ($i = 10; $i >= 0; $i--) {
+    echo "The prisoner has " . $i . " more years to serve. <br>";
+    if ($i > 5) {
+        continue;
+    }
+    if ($i == 2) {
+        echo "Paroled!";
+        break;
+    }
+    echo "Going to a parole hearing... <br>";
+}
+
+
+
 ?>
