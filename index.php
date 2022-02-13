@@ -164,37 +164,181 @@ $time_served = 0;
 // print_r($stringFirstUp);
 
 
-function square(float $val) 
-{
-    return $val*$val;
-}
+// function square(float $val) 
+// {
+//     return $val*$val;
+// }
  
-function squareRoot(float $val)
-{
-    return sqrt($val);
-}
+// function squareRoot(float $val)
+// {
+//     return sqrt($val);
+// }
  
-function calcHypotenuse(float $firstSideLength, float $secondSideLength) 
-{
-    /**
-     * Complete the code to calculate the length of the hypotenuse from the length of the
-     * first side and the second side using the square and squareRoot functions.
-     */
-    $hypotenuseLength = null;
+// function calcHypotenuse(float $firstSideLength, float $secondSideLength) 
+// {
+//     /**
+//      * Complete the code to calculate the length of the hypotenuse from the length of the
+//      * first side and the second side using the square and squareRoot functions.
+//      */
+// $squared_length = square($firstSideLength) + square($secondSideLength);
+
+
+//     $hypotenuseLength = null;
+    
+//     $hypotenuseLength = squareRoot($squared_length);
  
-    return $hypotenuseLength;
-}
+//     return $hypotenuseLength;
+// }
  
-$firstSideLength = null;
-do {
-    $firstSideLength = readline("Please enter the first side length: ");
-} while($firstSideLength == null);
+// $firstSideLength = null;
+// do {
+//     $firstSideLength = readline("Please enter the first side length: ");
+// } while($firstSideLength == null);
  
-$secondSideLength = null;
-do {
-    $secondSideLength = readline("Please enter the second side length: ");
-} while($secondSideLength == null);
+// $secondSideLength = null;
+// do {
+//     $secondSideLength = readline("Please enter the second side length: ");
+// } while($secondSideLength == null);
+
  
-echo calcHypotenuse($firstSideLength, $secondSideLength);
+// echo calcHypotenuse($firstSideLength, $secondSideLength);´
+
+// $radius = null;
+// do {
+//     $radius = readline("Please enter the radius: ");
+// } while($radius == null);
+ 
+// $height = null;
+// do {
+//     $height = readline("Please enter the heigth: ");
+// } while($height == null);
+
+// function literInBottle($radius, $height) {
+//     return pi() * $radius**2 * $height / 1000;
+// }
+ 
+// echo literInBottle($radius, $height);
+
+// function compare($num1, $num2) {
+//     return $num1 <=> $num2;
+// }
+
+// function giveClue($diff) {
+//     switch($diff) {
+//         case -1:
+//             echo "The given number is too high.\n";
+//             return true;
+//             break;
+//         case 1:
+//             echo "the given number is too low.\n";
+//             return true;
+//             break;
+//         case 0:
+//             echo "success";
+//             return false;
+//             break;
+//     }
+// }
+
+// function getGivenNumber() {
+//     return readline("Please give a number: ");
+// }
+
+// function replay() {
+//     switch(readline("Do you want to replay? (y/n) ")) {
+//         case "y":
+//             return true;
+//             break;
+//         case "n":
+//             return false;
+//             break;
+
+//         default:
+//             return true;
+//     }
+// }
+
+// function play() {
+//     $number = rand(0, 100);
+    
+    
+//     do {
+//         $givenValue = getGivenNumber();
+//     } while (giveClue(compare($number, $givenValue)));
+// }
+
+// do {
+//     play();
+// } while(replay());
+
+// $message = "I love coding";
+// $length = strlen($message);
+
+// echo "The length of the message '{$message}' is {$length}.";
+
+
+// $calling_codes = [
+//     'AR' => '+54',
+//     'CZ' => '+420',
+//     'DE' => '+49',
+//     'HU' => '+36',
+//     'US' => '+1'
+//   ];
+ 
+//   $country_names = [
+//     'US' => 'USA',
+//     'HU' => 'Hungary',
+//     'CZ' => 'Czechia',
+//     'AR' => 'Argentina',
+//     'DE' => 'Germany',
+//     'DK' => 'Denmark',
+//     'IN' => 'India'
+//   ];
+
+//   $newArray = [];
+
+//   foreach($calling_codes as $key => $value) {
+//       $newArray[] = "The calling code of {$country_names[$key]} is {$value}.";
+//   };
+
+//   var_dump($newArray);
+
+$cities = [
+    "Tokyo" => 150, 
+    "Mexico City" => 60,
+    "New York City" => 200,
+    "Mumbai" => 80,
+    "Seoul" => 130,
+    "Shanghai" => 90,
+    "Lagos" => 60,
+    "Buenos Aires" => 80,
+    "Cairo" => 50,
+    "London" => 180,
+];
+
+ksort($cities);
+
+// $cities[] = "Los Angeles";
+// $cities[] = "Calcutta";
+// $cities[] = "Beijing";
+
+// asort($cities);
+
+// foreach($cities as $value) {
+//     echo "<li>{$value}</li>";
+// }
+
+// $counter = count($cities);
+
+
+// while($counter > 0) {
+//     echo "{$cities[count($cities) - $counter]}, ";
+//     $counter--;
+// }
+
+foreach($cities as $city => $price) {
+    echo "A night in {$city} costs {$price} dollars. <br>";
+};
+
 
 ?>
